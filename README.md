@@ -22,11 +22,11 @@ The data used for the project includes:
 
 # Workflow & methodology
 
-**Initial exploration**: The src/exploration.py module focuses on the analysis of the "companies" collection through queries to mongodb. This initial exploration aims to select the appropriate city and define three potential office locations.
+**Initial exploration**: The src/exploration notebook focuses on the analysis of the "companies" collection through queries to mongodb. This initial exploration aims to select the appropriate city and define three potential office locations.
 
-**Requests to Foursquare**: The src/georequests.py module contains functions to retrieve information related to the location of various points of interest based on the given criteria. Foursquare API requests are made using the previously 3 potential chosen locations.
+**Requests to Foursquare**: The src/requests_to_collections notebook contains functions to retrieve information, using Foursquare API, related to the location of various points of interest based on the given criteria. This requests are converted into a suitable format and incorporated into mongodb as collections. 
 
-**Analysis**: In src/analysis.py, the requested data is cross-referenced with the London neighborhoods' geojson to analyze the content of each neighborhood and decide on the final location.
+**Analysis**: In src/analysis notebook, the requested data is cross-referenced with the London neighborhoods' geojson to analyze the content of each neighborhood and decide on the final location.
 
 **Visualization**: The src/visualization.py component focuses on creating maps that offer a better understanding of the analysis and support the decision made.
 
